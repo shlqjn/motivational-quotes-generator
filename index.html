@@ -13,31 +13,35 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <title>AI Motiviational Generator</title>
+    <title>AI Quotes Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>AI Motiviational Quotes Generator</h1>
+        <h1>Motiviational Quotes Generator</h1>
       </header>
 
       <main>
-        <form id="quote-generator-form">
-          <input
-            type="text"
-            placeholder="Enter a topic (resilience, self-love)"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="quotes" id="quotes"></div>
+        <div class="form-container">
+          <form id="quote-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a word for the quote..."
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Self love, resilience, money....</div>
+        </div>
+        <div class="quotes hidden" id="quotes"></div>
       </main>
+
       <footer>
-        This AI project was coded by
+        AI project was coded by
         <a href="https://github.com/shlqjn" target="_blank"> Sheila Kagawa</a>
         and is
         <a
@@ -55,6 +59,7 @@
         </a>
       </footer>
     </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>

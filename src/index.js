@@ -18,6 +18,10 @@ function generateQuote(event) {
     "You are a positive mental health motivator expert, and you specialize in writing short, impactful motivational quotes. Your mission is to generate a 4 line quote that encourages mental wellbeing. The quote should be positive, uplifting, and clear.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let quoteElement = document.querySelector("#quotes");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `<div class="blink">🧠Generating a motivational quote about ${instructionInput.value}</div>`;
+
   console.log("Generating Quote");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
