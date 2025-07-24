@@ -1,1 +1,100 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  font-family: "Delius", cursive, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
 
+a {
+  color: #5f5cfa;
+}
+.container {
+  margin: 100px auto;
+  max-width: 600px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.4;
+  color: #272044;
+  font-family: "Petit Formal Script", cursive;
+}
+
+form {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.12);
+  border-radius: 10px;
+  display: flex;
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+.instructions {
+  padding: 14px 20px;
+  border: 1px solid rgba(39, 33, 66, 0.3);
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 1.4px;
+  color: #272044;
+  background-color: #f2f7ff;
+  flex: 1;
+  outline: none;
+  margin-bottom: 0;
+  height: 52px;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  margin-left: 10px;
+  background: #3a92f6;
+  color: white;
+  border: none;
+  width: 120px;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #3e3dca;
+}
+
+.quotes {
+  font-size: 18px;
+  background-color: #fff;
+  padding: 20px;
+  line-height: 2;
+  border-left: 3px solid #3a92f6;
+  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+  margin: 20px;
+  font-family: `Delius`, cursive;
+  color: #272044;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  transition: color 0.3s ease;
+  margin-top: 40px;
+}
+
+footer a:hoover {
+  color: #3e3dca;
+}
