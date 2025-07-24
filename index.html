@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Delius&family=Petit+Formal+Script&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Motiviational Generator</title>
   </head>
   <body>
@@ -24,11 +25,12 @@
         <form id="quote-generator-form">
           <input
             type="text"
-            placeholder="Enter topic of motivational quote"
+            placeholder="Enter a topic (resilience, self-love)"
             autofocus
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
